@@ -45,7 +45,7 @@ const router = createBrowserRouter([
         children: [
             {
                 path: ':id',
-                element: <PrivetRoute><DetailsChef /></PrivetRoute>,
+                element: <DetailsChef />,
                 loader: ({ params }) => fetch(`https://chef-recipe-hunter-server-neloy1435-gmailcom.vercel.app/allData/${params.id}`)
             }
         ]
